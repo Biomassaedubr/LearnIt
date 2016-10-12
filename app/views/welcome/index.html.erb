@@ -1,0 +1,27 @@
+<div class="row">
+    <% @programs.each do |program| %>
+
+      <div class="col-lg-4">
+        <%= program_card(program) %>
+      </div>
+
+    <% end %>
+
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="well well-lg highlight_card">
+          <h2><a href="/contribute">Contribute Materials</a></h2>
+          <p>Help make this community better by contributing materials.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="bs-component">
+        <div class="well well-lg highlight_card">
+          <h2><a href="/about">What's <%= Rails.configuration.platform["name"] %></a></h2>
+          <p>Learn more about the <%= Rails.configuration.platform["name"] %> project.</p>
+        </div>
+      </div>
+    </div>
+</div>

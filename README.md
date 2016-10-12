@@ -1,53 +1,35 @@
-# LearnIt 
+LearnIt
+============
 
-(A basic platform to host your own (community) courses, tutorials, learning materials.)
+A centralized training resource for the Your learning needs.
 
-LearnIt is built on top of  [gae-init](https://github.com/gae-init/gae-init).
+## Example Projects:
+* FIRSTMastery: [Link](http://github.com/wilfriede/firstmastery/)
 
 Running the Development Environment
 -----------------------------------
+* Set secret_key in .env.local
+* Run ```rake db:migrate```
+* Start server
+```bash
+$ rails s
+```
 
-    $ cd /path/to/project-name
-    $ gulp
+Then visit `http://localhost:3000/` in your browser.
 
-To test it visit `http://localhost:8080/` in your browser.
+Development
+-----------
+For Design references look at [Bootstrap Material](https://github.com/FezVrasta/bootstrap-material-design#getting-started) & [Bootstrap Elements](http://fezvrasta.github.io/bootstrap-material-design/bootstrap-elements.html)
 
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-For a complete list of commands:
-
-    $ gulp help
+Have questions? Submit an [issue](https://github.com/wilfriedE/LearnIt/issues/new).
 
 
-Initializing or Resetting the project
-------------------------------------
+Platform specific configs
+------------------------
+In the ```config/platform.yml``` set the name and description of your platform.
 
-    $ cd /path/to/project-name
-    $ npm install
-    $ gulp
-
-If something goes wrong you can always do:
-
-    $ gulp reset
-    $ npm install
-    $ gulp
-
-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
-
-To install [Gulp][] as a global package:
-
-    $ npm install -g gulp
-
-Deploying on Google App Engine
-------------------------------
-
-    $ gulp deploy
-
-Before deploying make sure that the `main/app.yaml` and `gulp/config.coffee`
-are up to date.
-
-GOALS and Objectives :
+Goals and Objectives :
 ---------------------
-- TBD
+* A general purpose tool for crowdsourced learning.
 
-All Contributions are welcome. 
+All Contributions are welcome.
